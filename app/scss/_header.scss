@@ -1,0 +1,49 @@
+.header {
+    background-image: url(../images/header/bg-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    padding: 72px 0 0 0;
+}
+
+.header-menu__navigation {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 370px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-menu__num {
+    position: relative;
+}
+
+.header-menu__num::before {
+    content: '';
+    background: url(../images/header/phone.svg);
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: -40px;
+}
+
+.header-title {
+    font-size: 250px;
+    margin-top: 150px;
+}
+
+.header-subtitle {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 56px;
+    font-weight: 300;
+}
