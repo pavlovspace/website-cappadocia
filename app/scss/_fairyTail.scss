@@ -4,13 +4,14 @@
 
 .fairy-tail-box {
     max-width: 420px;
-    line-height: 48px;
+    line-height: 55px;
     margin-bottom: 100px;
 }
 
 .fairy-tail__about {
     max-width: 1560px;
     display: flex;
+    align-items: center;
     font-size: 18px;
 }
 
@@ -19,12 +20,16 @@
 }
 
 .about-aside {
+    @include RobotoCondensedLight;
     padding: 50px 0px 0px 55px;
 
     p {
-        font-weight: 300;
         padding-bottom: 50px;
         margin: 0;
+    }
+
+    span {
+        @include RobotoCondensedRegular;
     }
 }
 

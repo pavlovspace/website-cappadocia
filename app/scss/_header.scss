@@ -1,6 +1,6 @@
 .header {
     background-image: url(../images/header/bg-header.jpg);
-    background-position: center;
+    background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -13,6 +13,33 @@
     align-items: center;
     font-size: 24px;
     padding: 72px 0 0 0;
+
+    // hover effects
+    li::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background: $title;
+        transition: width .3s;
+    }
+
+    li:hover::after {
+        width: 100%;
+    }
+}
+
+.header-menu__num:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: $title;
+    transition: width .3s;
+}
+
+.header-menu__num:hover::after {
+    width: 100%;
 }
 
 .header-menu__navigation {
@@ -39,7 +66,12 @@
 
 .header-title {
     font-size: 250px;
-    margin-top: 150px;
+    margin: 150px 0 0 0;
+    padding: 0;
+    text-align: center;
+    @include balqis;
+    font-style: normal;
+    font-weight: normal;
 }
 
 .header-subtitle {
@@ -47,4 +79,8 @@
     justify-content: flex-end;
     font-size: 56px;
     font-weight: 300;
+    @include RobotoCondensedItalic;
+    font-style: italic;
+    margin-top: -40px;
+    margin-right: 50px;
 }
