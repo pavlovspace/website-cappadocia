@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    color: $blue;
+    background-color: $bg;
+    @include RobotoCondensedRegular;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: $blue;
+}
+
+.title {
+    color: $title;
+    font-size: 96px;
+    @include balqis;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.subtitle {
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+    @include RobotoCondensedItalic;
+    font-style: italic;
+}

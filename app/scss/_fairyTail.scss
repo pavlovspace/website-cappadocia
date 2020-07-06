@@ -1,0 +1,39 @@
+.fairy-tail {
+    margin-bottom: 200px;
+}
+
+.fairy-tail-box {
+    max-width: 420px;
+    line-height: 55px;
+    margin-bottom: 100px;
+}
+
+.fairy-tail__about {
+    max-width: 1560px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.about-slider {
+    max-width: 960px;
+}
+
+.about-aside {
+    @include RobotoCondensedLight;
+    padding: 50px 0px 0px 55px;
+
+    p {
+        padding-bottom: 50px;
+        margin: 0;
+    }
+
+    span {
+        @include RobotoCondensedRegular;
+    }
+}
+
+.about-aside__museum {
+    max-width: 280px;
+    padding-top: 50px;
+}
