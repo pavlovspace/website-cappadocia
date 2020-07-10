@@ -1,0 +1,38 @@
+.our-trip {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.our-trip__left {
+    margin-left: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.our-trip-box {
+    width: 330px;
+    line-height: 55px;
+    margin-bottom: 100px;
+}
+
+.our-trip__days {
+    font-size: 24px;
+
+    p {
+        @include RobotoCondensedRegular;
+        padding: 0;
+        margin: 0 0 20px 0;
+    }
+
+    li {
+        @include RobotoCondensedLight;
+    }
+}
+
+.our-trip__btn {
+    // margin-top: 11px;
+}
+
+.our-trip__slider {}
