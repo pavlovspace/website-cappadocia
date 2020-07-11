@@ -59,7 +59,7 @@ li {
     letter-spacing: 2px;
     position: relative;
     color: $blue !important;
-    box-shadow: inset 0px 0px 0px 0px rgb(95, 103, 204);
+    box-shadow: inset 0px 0px 0px 0px $lightBlue;
     ;
     display: inline-block;
     -webkit-transition: all .8s cubic-bezier(.2, .40, 0, 1);
