@@ -12,13 +12,13 @@
 }
 
 .our-trip-box {
-    width: 330px;
-    line-height: 55px;
+    width: 300px;
     margin-bottom: 100px;
 }
 
 .our-trip__days {
     font-size: 24px;
+
 
     p {
         @include RobotoCondensedRegular;
@@ -28,6 +28,7 @@
 
     li {
         @include RobotoCondensedLight;
+        line-height: 28px;
     }
 }
 

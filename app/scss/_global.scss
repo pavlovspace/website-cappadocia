@@ -12,6 +12,27 @@ body {
     color: $blue;
     background-color: $bg;
     @include RobotoCondensedRegular;
+    line-height: 21px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    //For Scroll background
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px #636e72;
+}
+
+::-webkit-scrollbar-thumb {
+    //For Scroll Scrolling Thumb 
+    border-radius: 5px;
+    background-color: $lightBlue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: $lightBlue;
 }
 
 .container {
@@ -38,6 +59,7 @@ li {
     @include balqis;
     font-style: normal;
     font-weight: normal;
+    line-height: 76px;
 }
 
 .subtitle {
@@ -46,6 +68,7 @@ li {
     justify-content: flex-end;
     @include RobotoCondensedItalic;
     font-style: italic;
+    line-height: 28px;
 }
 
 .btn-outline {

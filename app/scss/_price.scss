@@ -4,16 +4,14 @@
 
 .price-box {
     max-width: 250px;
-    line-height: 55px;
 }
 
 .price-inner {
     display: flex;
-
+    justify-content: space-between;
 }
 
 .price-inner__desc {
-    padding-right: 70px;
     padding-top: 100px;
     max-width: 530px;
     @include RobotoCondensedLight;
@@ -35,5 +33,4 @@
 
 .price-inner__desc--noinclud {
     max-width: 370px;
-    padding-right: 0;
 }

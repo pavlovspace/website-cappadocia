@@ -69,8 +69,10 @@
         transition: all .4s;
     }
 
-    img:hover {
+    img:hover,
+    .img:focus {
         transform: scale(1.4);
+        filter: invert(47%) sepia(77%) saturate(458%) hue-rotate(198deg) brightness(90%) contrast(94%);
     }
 }
 

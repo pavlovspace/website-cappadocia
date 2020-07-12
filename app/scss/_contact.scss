@@ -4,16 +4,15 @@
 
 .contact__wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .contact-box {
     width: 470px;
-    line-height: 55px;
 }
 
 .contact-box--price {
-    max-width: 230px;
+    max-width: 180px;
     margin-top: 20px;
     margin-bottom: 100px;
 }
