@@ -1,0 +1,73 @@
+.contact {
+    margin-bottom: 200px;
+}
+
+.contact__wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-box {
+    width: 470px;
+}
+
+.contact-box--price {
+    max-width: 180px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.contact-left {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-box__wrap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact-box__wrap--price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form__title {
+    @include RobotoCondensedRegular;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.input-text {
+    input {
+        width: 383px;
+        border: 1px solid $title;
+        height: 50px;
+        margin-bottom: 20px;
+        padding-left: 31px;
+    }
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $lightBlue;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $lightBlue;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: $lightBlue;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: $lightBlue;
+}

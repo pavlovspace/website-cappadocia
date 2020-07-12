@@ -1,0 +1,36 @@
+.price {
+    margin-bottom: 200px;
+}
+
+.price-box {
+    max-width: 250px;
+}
+
+.price-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-inner__desc {
+    padding-top: 100px;
+    max-width: 530px;
+    @include RobotoCondensedLight;
+
+    span {
+        font-size: 24px;
+        @include RobotoCondensedRegular;
+    }
+
+    p {
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    p:nth-child(2) {
+        margin-top: 50px;
+    }
+}
+
+.price-inner__desc--noinclud {
+    max-width: 370px;
+}
