@@ -3,7 +3,7 @@
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
     margin-bottom: 200px;
 }
 
@@ -13,6 +13,8 @@
         width: 80px;
         height: 120px;
     }
+
+    z-index: 30;
 }
 
 //animation header
@@ -208,6 +210,7 @@
     font-style: normal;
     font-weight: normal;
     line-height: 334px;
+    z-index: 50;
 }
 
 .header-subtitle {
