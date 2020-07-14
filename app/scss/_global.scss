@@ -130,6 +130,11 @@ li {
     transform: scale(1, 1);
 }
 
+::selection {
+    background-color: $title;
+    color: $lightBlue;
+}
+
 //preloader
 
 .preloader {

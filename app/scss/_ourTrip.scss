@@ -1,7 +1,10 @@
 .our-trip {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 .our-trip__left {
@@ -32,8 +35,21 @@
     }
 }
 
-.our-trip__btn {
-    // margin-top: 11px;
-}
+.our-trip__btn {}
 
 .our-trip__slider {}
+
+//scroll paper animation
+
+.scroll-animation {
+    position: relative;
+    height: 100px;
+}
+
+.paper-plane {
+    height: 100px;
+    transform: rotate(20deg);
+    position: absolute;
+    left: 0%;
+    top: 50%;
+}

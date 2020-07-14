@@ -30,8 +30,8 @@
 }
 
 .footer-desc__num {
-    margin-bottom: 20px;
     position: relative;
+    transition: .4s;
 }
 
 .footer-desc__num:before {
@@ -39,14 +39,21 @@
     background: url(../images/footer/phone1.svg);
     width: 30px;
     height: 30px;
-    left: 80px;
+    left: -40px;
     top: -5px;
     position: absolute;
+}
+
+.footer-desc__email:hover,
+.footer-desc__num:hover {
+    filter: invert(47%) sepia(77%) saturate(458%) hue-rotate(198deg) brightness(90%) contrast(94%);
 }
 
 .footer-desc__email {
     position: relative;
     margin-bottom: 38px;
+    margin-top: 20px;
+    transition: all .4s;
 }
 
 .footer-desc__email:before {
@@ -68,6 +75,7 @@
     img {
         transition: all .4s;
     }
+
 
     img:hover,
     .img:focus {
