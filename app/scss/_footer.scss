@@ -31,7 +31,7 @@
 
 .footer-desc__num {
     position: relative;
-    transition: .4s;
+    transition: all .3s linear;
 }
 
 .footer-desc__num:before {
@@ -47,13 +47,14 @@
 .footer-desc__email:hover,
 .footer-desc__num:hover {
     filter: invert(47%) sepia(77%) saturate(458%) hue-rotate(198deg) brightness(90%) contrast(94%);
+    @include RobotoCondensedRegular;
 }
 
 .footer-desc__email {
     position: relative;
     margin-bottom: 38px;
     margin-top: 20px;
-    transition: all .4s;
+    transition: all .3s linear;
 }
 
 .footer-desc__email:before {

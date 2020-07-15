@@ -71,63 +71,45 @@ li {
     line-height: 28px;
 }
 
+
+//button hover
+
+
 .btn-outline {
+    text-transform: uppercase;
     padding: 11px 55px;
     font-size: 24px;
     @include RobotoCondensedLight;
-    text-align: center;
-    border: 1px solid $title;
-    background: transparent;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    background: none;
     position: relative;
-    color: $blue !important;
-    box-shadow: inset 0px 0px 0px 0px $lightBlue;
-    ;
-    display: inline-block;
-    -webkit-transition: all .8s cubic-bezier(.2, .40, 0, 1);
-    -moz-transition: all .8s cubic-bezier(.2, .40, 0, 1);
-    -o-transition: all .8s cubic-bezier(.2, .40, 0, 1);
-    transition: all .8s cubic-bezier(.2, .40, 0, 1);
-}
-
-.btn-outline::before {
-    content: '';
-    position: absolute;
-    bottom: 0%;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: $title;
-    display: block;
-    z-index: -1;
-    -webkit-transform-origin: right top;
-    -ms-transform-origin: right top;
-    transform-origin: right top;
-    -webkit-transform: scale(0, 1);
-    -ms-transform: scale(0, 1);
-    transform: scale(0, 1);
-    -webkit-transition: transform .6s cubic-bezier(.2, .40, 0, 1);
-    -moz-transition: transform .6s cubic-bezier(.2, .40, 0, 1);
-    -o-transition: transform .6s cubic-bezier(.2, .40, 0, 1);
-    transition: transform .6s cubic-bezier(.2, .40, 0, 1);
-}
-
-.btn-outline:hover {
-    text-decoration: none;
-    background: $title;
-    box-shadow: inset 0px 60px 0px 0px $title;
-    color: #ffffff !important;
+    z-index: 1;
+    letter-spacing: 2px;
+    color: $blue;
     border: 1px solid $title;
+    cursor: pointer;
+    text-align: center;
+    transition: all .3s linear;
 }
 
-.btn-outline:hover::before {
-    -webkit-transform-origin: left top;
-    -ms-transform-origin: left top;
-    transform-origin: left top;
-    -webkit-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    transform: scale(1, 1);
+.btn-outline {
+    &:hover {
+        animation: pulse 1s ease-in infinite;
+        background: radial-gradient(circle, rgba($title, 0.25) 43%, transparent 50%) 0 0 / 1em 1em, radial-gradient(circle, rgba($title, 0.25) 43%, transparent 50%) 0.5em 0.5em / 2em 2em;
+        color: darken(adjust-hue($title, 180), 30%);
+        color: $lightBlue;
+        border: 1px solid $lightBlue;
+    }
+}
+
+@keyframes pulse {
+    50% {
+        background-position: 0.66em 0.66em, -0.33em -0.33em;
+    }
+
+    100% {
+        background-size: 2em 2em, 1em 1em;
+        background-position: -1.5em -1.5em, -1em -1em;
+    }
 }
 
 ::selection {
