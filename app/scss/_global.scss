@@ -13,12 +13,14 @@ body {
     background-color: $bg;
     @include RobotoCondensedRegular;
     line-height: 21px;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
     width: 7px;
 }
 
+//scrollbar 
 ::-webkit-scrollbar-track {
     //For Scroll background
     border-radius: 5px;
@@ -73,8 +75,6 @@ li {
 
 
 //button hover
-
-
 .btn-outline {
     text-transform: uppercase;
     padding: 11px 55px;
@@ -173,4 +173,17 @@ li {
     100% {
         transform: rotate(1800deg);
     }
+}
+
+//visual effect
+
+.transition {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 2s all ease-in-out;
+}
+
+.transition-appear {
+    opacity: 1;
+    transform: translateY(0px);
 }

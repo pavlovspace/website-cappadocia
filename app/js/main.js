@@ -33,8 +33,8 @@ const flightPath = {
             y: 5
         },
         {
-            x: 800,
-            y: -50
+            x: 900,
+            y: 100
         },
         {
             x: window.innerWidth,
@@ -61,3 +61,20 @@ const scene = new ScrollMagic.Scene({
     })
     .setTween(tween)
     .addTo(controller)
+
+//visual effect
+
+function scrollAppear() {
+    let targetEl = document.querySelectorAll('.transition');
+    targetEl.forEach(el => {
+        let targetElTop = el.getBoundingClientRect().top;
+        let windowHeight = window.innerHeight;
+        if (targetElTop <= windowHeight) {
+            el.classList.add('transition-appear');
+        } else if (targetElTop >= windowHeight && reversible) {
+            el.classList.remove('transition-appear');
+        }
+    })
+}
+
+window.addEventListener('scroll', scrollAppear)
