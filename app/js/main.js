@@ -90,7 +90,6 @@ function popupToggle() {
     let popup = document.getElementById('popup');
     document.querySelector('body').style.overflow = 'hidden';
 
-
     blur.classList.add('active')
     popup.classList.add('active')
 }
@@ -99,7 +98,6 @@ let closePopup = document.querySelector('.close')
 closePopup.addEventListener('click', () => {
     let blur = document.getElementById('blur');
     document.querySelector('body').style.overflow = 'auto';
-
 
     popup.classList.remove('active');
     blur.classList.toggle('active')
