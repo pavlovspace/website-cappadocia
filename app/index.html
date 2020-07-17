@@ -95,7 +95,7 @@
     <img class="paper-plane" src="images/paper.png" alt="paper-plane" />
   </section>
 
-  <section class="our-trip">
+  <section class="our-trip" id="blur">
     <div class="our-trip__left">
       <div class="our-trip-box transition">
         <div class="title">Our trip</div>
@@ -128,7 +128,7 @@
         <li>Przejazd do Ankary</li>
         <li>Wylot do Warszawy</li>
       </ul>
-      <button class="our-trip__btn btn-outline">Rezerwuj teraz</button>
+      <button class="our-trip__btn btn-outline" id="popupBtn">Rezerwuj teraz</button>
     </div>
     <div class="our-trip__slider">
       <img src="images/our-trip/trip-1.png" alt="" />
@@ -279,6 +279,27 @@
       </div>
     </div>
   </footer>
+
+  <div class="popup" id="popup">
+    <div class="contact-form">
+      <div class="close">
+        <span></span>
+      </div>
+      <div class="contact-form__title">
+        Zostaw prośbę lub zadaj pytanie
+      </div>
+      <form action="">
+        <div class="input-text">
+          <input type="text" placeholder="Имя" />
+        </div>
+        <div class="input-text">
+          <input type="text" placeholder="Tелефон" />
+        </div>
+        <button class="btn-outline">Zatwierdź</button>
+      </form>
+    </div>
+  </div>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>

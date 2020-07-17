@@ -62,7 +62,7 @@ const scene = new ScrollMagic.Scene({
     .setTween(tween)
     .addTo(controller)
 
-//visual effect
+// -- visual effect
 
 function scrollAppear() {
     let targetEl = document.querySelectorAll('.transition');
@@ -71,10 +71,36 @@ function scrollAppear() {
         let windowHeight = window.innerHeight;
         if (targetElTop <= windowHeight) {
             el.classList.add('transition-appear');
-        } else if (targetElTop >= windowHeight && reversible) {
+        } else if (targetElTop >= windowHeight) {
             el.classList.remove('transition-appear');
         }
     })
 }
 
 window.addEventListener('scroll', scrollAppear)
+
+// -- popup
+let popupBtn = document.getElementById('popupBtn')
+popupBtn.addEventListener('click', () => {
+    popupToggle()
+})
+
+function popupToggle() {
+    let blur = document.getElementById('blur');
+    let popup = document.getElementById('popup');
+    document.querySelector('body').style.overflow = 'hidden';
+
+
+    blur.classList.add('active')
+    popup.classList.add('active')
+}
+
+let closePopup = document.querySelector('.close')
+closePopup.addEventListener('click', () => {
+    let blur = document.getElementById('blur');
+    document.querySelector('body').style.overflow = 'auto';
+
+
+    popup.classList.remove('active');
+    blur.classList.toggle('active')
+});

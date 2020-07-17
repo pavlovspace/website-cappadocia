@@ -53,3 +53,9 @@
     left: 0%;
     top: 50%;
 }
+
+.our-trip#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
