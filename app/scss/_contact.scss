@@ -43,6 +43,8 @@
 }
 
 .input-text {
+    position: relative;
+
     input {
         width: 80%;
         border: 1px solid $title;
@@ -50,8 +52,44 @@
         margin-bottom: 20px;
         padding-left: 31px;
     }
+
+    small {
+        color: rgb(251, 99, 99);
+        @include RobotoCondensedLight;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        visibility: hidden;
+    }
 }
 
+.input-text.error small {
+    visibility: visible;
+}
+
+.input-text.error input {
+    border: 1px solid rgb(251, 99, 99);
+}
+
+.input-text.success input {
+    border: 1px solid rgb(87, 184, 63);
+}
+
+//Remove arrows in input number
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+//custom placeholder
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: $blue;

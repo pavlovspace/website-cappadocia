@@ -241,12 +241,14 @@
               <div class="contact-form__title">
                 Zostaw prośbę lub zadaj pytanie
               </div>
-              <form action="">
+              <form action="" id="contactForm">
                 <div class="input-text">
-                  <input type="text" placeholder="Имя" />
+                  <small>Wpisz imię</small>
+                  <input type="text" placeholder="Imię" id="contact-name" />
                 </div>
                 <div class="input-text">
-                  <input type="text" placeholder="Tелефон" />
+                  <small>Wpisz numer</small>
+                  <input type="number" placeholder="Numer komórkowy" id="contact-number" />
                 </div>
                 <button class="btn-outline">Zatwierdź</button>
               </form>
@@ -280,22 +282,25 @@
     </div>
   </footer>
 
-  <div class="popup" id="blur">
-    <div class="contact-form" id="popup">
+  <div class="blur" id="blur"></div>
+  <div class="popup" id="popup">
+    <div class="contact-form">
       <div class="close">
         <span></span>
       </div>
       <div class="contact-form__title">
         Zostaw prośbę lub zadaj pytanie
       </div>
-      <form action="">
+      <form action="" id="formPopup">
         <div class="input-text">
-          <input type="text" placeholder="Имя" />
+          <small>Wpisz imię</small>
+          <input type="text" placeholder="Imię" id="input-name" />
         </div>
         <div class="input-text">
-          <input type="text" placeholder="Tелефон" />
+          <small>Wpisz numer</small>
+          <input type="number" placeholder="Numer komórkowy" id="input-number" />
         </div>
-        <button class="btn-outline">Zatwierdź</button>
+        <button type="submit" class="btn-outline">Zatwierdź</button>
       </form>
     </div>
   </div>

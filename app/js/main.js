@@ -98,8 +98,79 @@ function popupToggle() {
 let closePopup = document.querySelector(".close");
 closePopup.addEventListener("click", () => {
   let blur = document.getElementById("blur");
+  let popup = document.getElementById("popup");
+
   document.querySelector("body").style.overflow = "auto";
 
   popup.classList.remove("active");
-  blur.classList.toggle("active");
+  blur.classList.remove("active");
 });
+
+// --forms validation
+
+const formPopup = document.querySelector("#formPopup");
+const inputName = document.querySelector("#input-name");
+const inputNumber = document.querySelector("#input-number");
+
+const contactForm = document.querySelector("#contactForm");
+const contactName = document.querySelector("#contact-name");
+const contactNumber = document.querySelector("#contact-number");
+
+formPopup.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  checkInputs();
+});
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  CheckInputsContact();
+});
+
+function checkInputs() {
+  const inputNameValue = inputName.value.trim();
+  const inputNumberValue = inputNumber.value.trim();
+
+  //Imię
+  if (inputNameValue === "") {
+    setErrorFor(inputName, "Wpisz imię");
+  } else {
+    setSuccessFor(inputName);
+  }
+  //Numer
+  if (inputNumberValue === "") {
+    setErrorFor(inputNumber, "Wpisz numer");
+  } else {
+    setSuccessFor(inputNumber);
+  }
+}
+function CheckInputsContact() {
+  const contactNameValue = contactName.value.trim();
+  const contactNumberValue = contactNumber.value.trim();
+
+  //Imię
+  if (contactNameValue === "") {
+    setErrorFor(contactName, "Wpisz imię");
+  } else {
+    setSuccessFor(contactName);
+  }
+  //Numer
+  if (contactNumberValue === "") {
+    setErrorFor(contactNumber, "Wpisz numer");
+  } else {
+    setSuccessFor(contactNumber);
+  }
+}
+
+function setErrorFor(input, message) {
+  const inputControl = input.parentElement;
+  const small = inputControl.querySelector("small");
+
+  small.innerText = message;
+  inputControl.className = "input-text error";
+}
+
+function setSuccessFor(input) {
+  const inputControl = input.parentElement;
+  inputControl.className = "input-text success";
+}
