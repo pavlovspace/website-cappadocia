@@ -5,18 +5,69 @@
 
 .fairy-tail__about {
     max-width: 1560px;
+    width: 100%;
     display: flex;
     align-items: center;
     font-size: 18px;
 }
 
 .about-slider {
-    max-width: 960px;
+    width: 960px;
+    height: 700px;
+    position: relative;
+}
+
+.about-slider__item {
+    overflow: hidden;
+}
+
+
+.arrow-back,
+.arrow-next {
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    position: absolute;
+    top: 315px;
+    z-index: 700;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.arrow-back {
+    background: url(../images/arrow-back.svg);
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.arrow-next {
+    background: url(../images/arrow-next.svg);
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.arrow-back:hover,
+.arrow-next:hover {
+    background-color: rgba(0, 0, 0, 0.040);
+}
+
+.about-slider__item img {
+    transition: all ease 1s;
+    opacity: 1;
+    position: absolute;
+    min-height: 700px;
+    min-width: 960px;
+}
+
+.about-slider__item .opacity0 {
+    opacity: 0;
 }
 
 .about-aside {
     @include RobotoCondensedLight;
     padding: 50px 0px 0px 55px;
+    width: 545px;
 
     p {
         padding-bottom: 50px;

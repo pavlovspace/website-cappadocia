@@ -174,3 +174,69 @@ function setSuccessFor(input) {
   const inputControl = input.parentElement;
   inputControl.className = "input-text success";
 }
+
+// --sliders
+let images = document.querySelectorAll(".about-slider__item img");
+let imgTrip = document.querySelectorAll(".slider-inner img");
+
+let current = 0;
+let currentTrip = 0;
+let arrowBack = document.querySelector("#arrow-back");
+let arrowNext = document.querySelector("#arrow-next");
+let arrowBackTrip = document.querySelector("#arrowBackTrip");
+let arrowNextTrip = document.querySelector("#arrowNextTrip");
+
+// -- slider
+
+slider();
+arrowBack.addEventListener("click", () => {
+  if (current - 1 == -1) {
+    current = images.length - 1;
+  } else {
+    current--;
+  }
+  slider();
+});
+
+arrowNext.addEventListener("click", () => {
+  if (current + 1 == images.length) {
+    current = 0;
+  } else {
+    current++;
+  }
+  slider();
+});
+
+function slider() {
+  for (let i = 0; i < images.length; i++) {
+    images[i].classList.add("opacity0");
+  }
+  images[current].classList.remove("opacity0");
+}
+
+// -- sliderTrip
+sliderTrip();
+arrowBackTrip.addEventListener("click", () => {
+  if (currentTrip - 1 == -1) {
+    currentTrip = imgTrip.length - 1;
+  } else {
+    currentTrip--;
+  }
+  sliderTrip();
+});
+
+arrowNextTrip.addEventListener("click", () => {
+  if (currentTrip + 1 == imgTrip.length) {
+    currentTrip = 0;
+  } else {
+    currentTrip++;
+  }
+  sliderTrip();
+});
+
+function sliderTrip() {
+  for (let i = 0; i < imgTrip.length; i++) {
+    imgTrip[i].classList.add("opacity0");
+  }
+  imgTrip[currentTrip].classList.remove("opacity0");
+}
