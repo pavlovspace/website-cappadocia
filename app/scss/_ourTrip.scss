@@ -37,7 +37,32 @@
 
 .our-trip__btn {}
 
-.our-trip__slider {}
+.our-trip__slider {
+    position: relative;
+    width: 960px;
+    height: 1095px;
+
+    .arrow-back,
+    .arrow-next {
+        top: 513px;
+    }
+}
+
+.slider-inner {
+    overflow: hidden;
+}
+
+.our-trip__slider img {
+    transition: all ease 1s;
+    opacity: 1;
+    min-height: 1095px;
+    min-width: 960px;
+    position: absolute;
+}
+
+.our-trip__slider .opacity0 {
+    opacity: 0;
+}
 
 //scroll paper animation
 
