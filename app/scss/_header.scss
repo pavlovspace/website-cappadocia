@@ -8,13 +8,13 @@
 }
 
 .header-balloons {
+    z-index: 30;
+
     img {
         position: absolute;
         width: 80px;
         height: 120px;
     }
-
-    z-index: 30;
 }
 
 //animation header

@@ -1,0 +1,268 @@
+@media (max-width:1520px) {
+    .about-slider__item img {
+        max-height: 475px;
+        max-width: 650px;
+    }
+
+    .about-slider {
+        width: 650px;
+        height: 475px;
+    }
+
+    .arrow-back,
+    .arrow-next {
+        top: 215px;
+    }
+}
+
+@media (max-width:1240px) {
+    .header-title {
+        font-size: 170px;
+        line-height: 220px;
+        margin: 120px 0 0 0;
+    }
+
+    .header-subtitle {
+        font-size: 40px;
+        margin-top: -20px;
+    }
+
+    .fairy-tail__about {
+        flex-direction: column;
+    }
+
+    .our-trip__left {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .our-trip {
+        flex-direction: column;
+    }
+
+    .our-trip__days-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .our-trip__btn {
+        margin: 50px auto;
+    }
+
+    .our-trip__days {
+        padding: 50px 25px 0 0px;
+    }
+
+    .our-trip__slider-wrap {
+        width: 100%;
+    }
+
+    .our-trip__slider {
+        margin: 0 auto;
+        height: 765px;
+        width: 960px;
+    }
+
+    .our-trip__slider img {
+        height: 765px;
+        width: 960px;
+    }
+
+    .our-trip__slider {
+
+        .arrow-back,
+        .arrow-next {
+            top: 350px;
+        }
+    }
+}
+
+@media (max-width:970px) {
+    .our-trip__slider {
+        width: 100%;
+    }
+
+    .our-trip__slider img {
+        width: 100%;
+    }
+}
+
+@media (max-width:840px) {
+    .header-menu {
+        font-size: 20px;
+        padding: 44px 0 0 0;
+    }
+
+    .header-menu__num::before {
+        width: 25px;
+        height: 25px;
+        background-size: cover;
+    }
+
+    .header-title {
+        font-size: 120px;
+        line-height: 150px;
+        margin: 100px 0 0 0;
+    }
+
+    .header-subtitle {
+        font-size: 30px;
+        margin-top: -20px;
+    }
+
+    .header-balloons img:nth-child(11) {
+        top: 53%;
+        left: 73%;
+    }
+
+    .header-balloons img:nth-child(17) {
+        top: 80%;
+        left: 60%;
+    }
+
+    .header-balloons img:nth-child(8) {
+        top: 90%;
+    }
+
+    .header-balloons img:nth-child(15),
+    .header-balloons img:nth-child(3) {
+        top: 75%;
+    }
+
+    .header-balloons img:nth-child(5) {
+        top: 70%;
+    }
+
+    .header-balloons img:nth-child(2n + 1) {
+        width: 30px;
+        height: 45px;
+    }
+
+    .header-balloons img:nth-child(4n + 2) {
+        width: 15px;
+        height: 25px;
+    }
+
+    .header-balloons {
+        img {
+            width: 20px;
+            height: 40px;
+        }
+    }
+
+    .about-slider {
+        width: 100%;
+    }
+
+    .about-slider__item img {
+        max-height: 960px;
+        max-width: 100%;
+    }
+
+    .about-aside {
+        padding: 130px 0px 0px 15px;
+        width: 100%;
+    }
+
+    .about-aside p {
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width:600px) {
+    .about-slider__item img {
+        height: 460px;
+        max-width: 100%;
+    }
+
+    .arrow-back,
+    .arrow-next {
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        top: 175px;
+    }
+
+    .header-menu {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        .header-menu__navigation {
+            padding-bottom: 20px;
+        }
+    }
+
+    .header-title {
+        font-size: 80px;
+        line-height: 120px;
+        margin: 60px 0 0 0;
+    }
+
+    .header-subtitle {
+        font-size: 22px;
+        margin-right: 15px;
+    }
+
+    .about-aside {
+        padding: 0px 15px 0px 15px;
+        width: 100%;
+    }
+
+    .our-trip__days-wrap {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .our-trip__slider {
+        height: 565px;
+    }
+
+    .our-trip__slider img {
+        height: 565px;
+    }
+
+    .our-trip__slider {
+
+        .arrow-back,
+        .arrow-next {
+            top: 250px;
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .header-menu {
+        .header-menu__navigation {
+            width: 300px;
+        }
+    }
+
+    .header-title {
+        font-size: 60px;
+        line-height: 100px;
+    }
+
+    .header-subtitle {
+        font-size: 18px;
+        margin-right: 0px;
+    }
+
+    .about-slider__item img {
+        height: 290px;
+        max-width: 100%;
+    }
+
+    .arrow-back,
+    .arrow-next {
+        top: 105px;
+    }
+
+    .about-slider {
+        height: 295px;
+    }
+}

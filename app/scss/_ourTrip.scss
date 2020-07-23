@@ -35,7 +35,9 @@
     }
 }
 
-.our-trip__btn {}
+.our-trip__btn {
+    width: 320px;
+}
 
 .our-trip__slider {
     position: relative;
@@ -55,26 +57,11 @@
 .our-trip__slider img {
     transition: all ease 1s;
     opacity: 1;
-    min-height: 1095px;
-    min-width: 960px;
+    max-height: 1095px;
+    max-width: 960px;
     position: absolute;
 }
 
 .our-trip__slider .opacity0 {
     opacity: 0;
-}
-
-//scroll paper animation
-
-.scroll-animation {
-    position: relative;
-    height: 100px;
-}
-
-.paper-plane {
-    height: 100px;
-    transform: rotate(20deg);
-    position: absolute;
-    left: 0%;
-    top: 50%;
 }

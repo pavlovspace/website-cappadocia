@@ -8,8 +8,7 @@ window.onload = function () {
 const flightPath = {
   curviness: 1.25,
   autoRotate: true,
-  values: [
-    {
+  values: [{
       x: 100,
       y: -10,
     },
@@ -56,10 +55,10 @@ tween.add(
 const controller = new ScrollMagic.Controller();
 
 const scene = new ScrollMagic.Scene({
-  triggerElement: ".scroll-animation",
-  duration: 1000,
-  triggerHook: 1,
-})
+    triggerElement: ".scroll-animation",
+    duration: 1000,
+    triggerHook: 1,
+  })
   .setTween(tween)
   .addTo(controller);
 
@@ -89,7 +88,7 @@ popupBtn.addEventListener("click", () => {
 function popupToggle() {
   let blur = document.getElementById("blur");
   let popup = document.getElementById("popup");
-  document.querySelector("body").style.overflow = "hidden";
+  document.querySelector("body").style.overflowY = "hidden";
 
   blur.classList.add("active");
   popup.classList.add("active");
@@ -100,7 +99,7 @@ closePopup.addEventListener("click", () => {
   let blur = document.getElementById("blur");
   let popup = document.getElementById("popup");
 
-  document.querySelector("body").style.overflow = "auto";
+  document.querySelector("body").style.overflowY = "auto";
 
   popup.classList.remove("active");
   blur.classList.remove("active");
@@ -144,6 +143,7 @@ function checkInputs() {
     setSuccessFor(inputNumber);
   }
 }
+
 function CheckInputsContact() {
   const contactNameValue = contactName.value.trim();
   const contactNumberValue = contactNumber.value.trim();
