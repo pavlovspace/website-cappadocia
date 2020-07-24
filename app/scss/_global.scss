@@ -13,6 +13,7 @@ body {
     background-color: $bg;
     @include RobotoCondensedRegular;
     line-height: 21px;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -285,4 +286,20 @@ li {
     background-color: rgba(0, 0, 0, 0.877);
     visibility: visible;
     z-index: 998;
+}
+
+//scroll paper animation
+
+.scroll-animation {
+    position: relative;
+    height: 100px;
+    z-index: 700;
+}
+
+.paper-plane {
+    height: 100px;
+    transform: rotate(20deg);
+    position: absolute;
+    left: 0%;
+    top: 50%;
 }

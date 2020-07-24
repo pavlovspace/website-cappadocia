@@ -32,19 +32,19 @@
     z-index: 700;
     cursor: pointer;
     transition: .6s;
+    border-radius: 10px;
 }
 
 .arrow-back {
     background: url(../images/arrow-back.svg);
     left: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-
+    background-color: rgba(0, 0, 0, 0.290);
 }
 
 .arrow-next {
     background: url(../images/arrow-next.svg);
     right: 0;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.290);
 }
 
 .arrow-back:hover,
@@ -56,8 +56,8 @@
     transition: all ease 1s;
     opacity: 1;
     position: absolute;
-    min-height: 700px;
-    min-width: 960px;
+    max-height: 700px;
+    max-width: 960px;
 }
 
 .about-slider__item .opacity0 {
