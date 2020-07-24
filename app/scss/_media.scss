@@ -78,6 +78,41 @@
             top: 350px;
         }
     }
+
+    .hotel-img {
+        display: none;
+    }
+
+    .hotel-gallery__img {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+    }
+
+    .img-item:nth-child(odd) {
+        padding-right: 0px;
+    }
+
+    .contact-right__img {
+        display: none;
+    }
+
+    .contact-box__wrap {
+        padding-bottom: 0;
+    }
+
+    .footer {
+        height: 80vh;
+    }
+
+    .footer-right__title {
+        font-size: 66px;
+    }
+
+    .title--footer {
+        font-size: 66px;
+    }
 }
 
 @media (max-width:970px) {
@@ -87,6 +122,127 @@
 
     .our-trip__slider img {
         width: 100%;
+    }
+
+    .title {
+        font-size: 56px;
+        line-height: 36px;
+    }
+
+    .our-trip-box {
+        margin: 0 auto;
+        width: 200px;
+    }
+
+    .price-box {
+        max-width: 200px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    .price,
+    .our-trip {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
+
+    .fairy-tail-box {
+        margin-bottom: 25px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .hotel-box {
+        line-height: 55px;
+        padding-bottom: 25px;
+        padding-top: 10px;
+        margin: 0 auto;
+    }
+
+    .hotel {
+        margin-bottom: 25px;
+    }
+
+    .contact {
+        margin-bottom: 25px;
+    }
+
+    .header {
+        margin-bottom: 50px;
+    }
+
+
+    .contact-box__wrap {
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    .scroll-animation {
+        height: 25px;
+    }
+
+    .paper-plane {
+        height: 60px;
+    }
+
+    .our-trip__days {
+        padding: 25px 25px 0 0px;
+    }
+
+    .our-trip__btn {
+        margin: 25px auto;
+    }
+
+    .img-item {
+        padding-top: 25px;
+    }
+
+    .price-inner__img {
+        display: none;
+    }
+
+    .price-inner__desc {
+        padding-top: 25px;
+        max-width: 400px;
+    }
+
+    .contact-box {
+        max-width: 300px;
+    }
+
+    .contact-box--price {
+        max-width: 150px;
+    }
+
+    .footer {
+        padding-top: 25px;
+    }
+
+    .title--footer {
+        margin-bottom: 25px;
+    }
+
+    .footer-desc__email {
+        position: relative;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .footer-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer-right__title {
+        font-size: 66px;
+        padding-top: 25px;
+        padding-bottom: 50px;
+        margin: 0 auto;
+    }
+
+    .footer-desc {
+        margin: 0 auto;
     }
 }
 
@@ -218,6 +374,14 @@
         text-align: left;
     }
 
+    .our-trip__days {
+        font-size: 18px;
+    }
+
+    .our-trip__days li {
+        line-height: 20px;
+    }
+
     .our-trip__slider {
         height: 565px;
     }
@@ -232,6 +396,73 @@
         .arrow-next {
             top: 250px;
         }
+    }
+
+    .our-trip__btn {
+        font-size: 18px;
+        width: 300px;
+    }
+
+    .our-trip__left {
+        padding: 0;
+    }
+
+    .img-item {
+        width: 100%;
+    }
+
+    .img-item:nth-child(1) {
+        padding-top: 0px;
+    }
+
+    .price-inner {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .price-inner__desc {
+        margin: 0 auto;
+    }
+
+    .price-inner__desc--noinclud {
+        width: 400px;
+    }
+
+    .price-inner__desc p:nth-child(2) {
+        margin-top: 15px;
+    }
+
+    .footer-right__title {
+        font-size: 40px;
+    }
+
+    .footer-desc {
+        max-height: 415px;
+        max-width: 280px;
+        background-size: contain;
+    }
+
+    .footer {
+        height: 58vh;
+    }
+
+    .footer-desc__email:before {
+        content: '';
+        left: 15px;
+        top: 0;
+        width: 25px;
+        height: 25px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .footer-desc__num:before {
+        content: '';
+        width: 25px;
+        height: 25px;
+        left: -30px;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
 
