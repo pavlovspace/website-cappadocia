@@ -8,7 +8,8 @@ window.onload = function () {
 const flightPath = {
   curviness: 1.25,
   autoRotate: true,
-  values: [{
+  values: [
+    {
       x: 100,
       y: -10,
     },
@@ -55,10 +56,10 @@ tween.add(
 const controller = new ScrollMagic.Controller();
 
 const scene = new ScrollMagic.Scene({
-    triggerElement: ".scroll-animation",
-    duration: 1000,
-    triggerHook: 1,
-  })
+  triggerElement: ".scroll-animation",
+  duration: 1000,
+  triggerHook: 1,
+})
   .setTween(tween)
   .addTo(controller);
 
@@ -240,3 +241,5 @@ function sliderTrip() {
   }
   imgTrip[currentTrip].classList.remove("opacity0");
 }
+
+//-- Smooth Scrolling

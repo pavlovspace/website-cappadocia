@@ -5,8 +5,8 @@
     }
 
     .about-slider {
-        width: 650px;
-        height: 475px;
+        max-width: 667px;
+        max-height: 475px;
     }
 
     .arrow-back,
@@ -102,10 +102,6 @@
         padding-bottom: 0;
     }
 
-    .footer {
-        height: 80vh;
-    }
-
     .footer-right__title {
         font-size: 66px;
     }
@@ -142,13 +138,13 @@
 
     .price,
     .our-trip {
-        padding-top: 25px;
-        padding-bottom: 25px;
-        margin-bottom: 25px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        margin-bottom: 35px;
     }
 
     .fairy-tail-box {
-        margin-bottom: 25px;
+        padding-bottom: 25px;
         max-width: 300px;
         margin: 0 auto;
     }
@@ -161,15 +157,19 @@
     }
 
     .hotel {
-        margin-bottom: 25px;
+        margin-bottom: 35px;
     }
 
     .contact {
-        margin-bottom: 25px;
+        margin-bottom: 70px;
     }
 
     .header {
-        margin-bottom: 50px;
+        margin-bottom: 70px;
+    }
+
+    .fairy-tail {
+        margin-bottom: 35px;
     }
 
 
@@ -178,12 +178,13 @@
         padding-bottom: 0px;
     }
 
-    .scroll-animation {
-        height: 25px;
+
+    .contact-box--price {
+        margin-bottom: 50px;
     }
 
-    .paper-plane {
-        height: 60px;
+    .scroll-animation {
+        display: none;
     }
 
     .our-trip__days {
@@ -217,21 +218,45 @@
 
     .footer {
         padding-top: 25px;
+        height: 145vh;
     }
 
     .title--footer {
         margin-bottom: 25px;
     }
 
-    .footer-desc__email {
+    .footer-desc {
+        max-height: 415px;
+        max-width: 280px;
+        background-size: contain;
         position: relative;
         margin-bottom: 20px;
         margin-top: 20px;
     }
 
+    .footer-desc__email:before {
+        content: '';
+        left: 15px;
+        top: 0;
+        width: 25px;
+        height: 25px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .footer-desc__num:before {
+        content: '';
+        width: 25px;
+        height: 25px;
+        left: -30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
     .footer-wrap {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     .footer-right__title {
@@ -319,7 +344,7 @@
     }
 
     .about-aside {
-        padding: 130px 0px 0px 15px;
+        padding: 50px 0px 0px 15px;
         width: 100%;
     }
 
@@ -329,10 +354,6 @@
 }
 
 @media (max-width:600px) {
-    .about-slider__item img {
-        height: 460px;
-        max-width: 100%;
-    }
 
     .arrow-back,
     .arrow-next {
@@ -418,14 +439,16 @@
     .price-inner {
         flex-direction: column;
         width: 100%;
+
+        p {
+            text-align: left;
+        }
+
+        text-align: center;
     }
 
     .price-inner__desc {
         margin: 0 auto;
-    }
-
-    .price-inner__desc--noinclud {
-        width: 400px;
     }
 
     .price-inner__desc p:nth-child(2) {
@@ -436,34 +459,6 @@
         font-size: 40px;
     }
 
-    .footer-desc {
-        max-height: 415px;
-        max-width: 280px;
-        background-size: contain;
-    }
-
-    .footer {
-        height: 58vh;
-    }
-
-    .footer-desc__email:before {
-        content: '';
-        left: 15px;
-        top: 0;
-        width: 25px;
-        height: 25px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .footer-desc__num:before {
-        content: '';
-        width: 25px;
-        height: 25px;
-        left: -30px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
 }
 
 @media (max-width:400px) {
@@ -483,17 +478,17 @@
         margin-right: 0px;
     }
 
-    .about-slider__item img {
-        height: 290px;
-        max-width: 100%;
-    }
-
     .arrow-back,
     .arrow-next {
         top: 105px;
     }
 
     .about-slider {
-        height: 295px;
+        height: 280px;
+    }
+
+    .footer {
+        padding-top: 25px;
+        height: 85vh;
     }
 }
