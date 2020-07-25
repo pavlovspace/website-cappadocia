@@ -234,7 +234,7 @@ li {
         right: 15px;
         top: 15px;
         background-color: $title;
-        transition: all .6s;
+        transition: all .4s;
 
         &:hover {
             background-color: $lightBlue;
@@ -271,7 +271,7 @@ li {
     left: 0;
     top: 0;
     visibility: hidden;
-    transition: .2s all ease-in-out;
+    transition: .4s all ease-in-out;
 }
 
 #popup.active {

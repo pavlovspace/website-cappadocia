@@ -8,7 +8,8 @@ window.onload = function () {
 const flightPath = {
   curviness: 1.25,
   autoRotate: true,
-  values: [{
+  values: [
+    {
       x: 100,
       y: -10,
     },
@@ -55,10 +56,10 @@ tween.add(
 const controller = new ScrollMagic.Controller();
 
 const scene = new ScrollMagic.Scene({
-    triggerElement: ".scroll-animation",
-    duration: 1000,
-    triggerHook: 1,
-  })
+  triggerElement: ".scroll-animation",
+  duration: 1000,
+  triggerHook: 1,
+})
   .setTween(tween)
   .addTo(controller);
 
@@ -240,3 +241,43 @@ function sliderTrip() {
   }
   imgTrip[currentTrip].classList.remove("opacity0");
 }
+
+//-- Smooth Scrolling
+function smoothScroll(target, duration) {
+  var target = document.querySelector(target);
+  var targetPosition = target.getBoundingClientRect().top;
+  var startPosition = window.pageYOffset || window.scrollY;
+  var distance = targetPosition - startPosition;
+  var startTime = null;
+
+  function loop(currentTime) {
+    if (startTime === null) startTime = currentTime;
+    var timeElapsed = currentTime - startTime;
+    var run = ease(timeElapsed, startPosition, distance, duration);
+    window.scrollTo(0, run);
+    if (timeElapsed < duration) requestAnimationFrame(loop);
+  }
+  function ease(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return (c / 2) * t * t + b;
+    t--;
+    return (-c / 2) * (t * (t - 2) - 1) + b;
+  }
+  requestAnimationFrame(loop);
+}
+
+//Animating 1 Link
+document.querySelector(".ourTripLink").addEventListener("click", function () {
+  smoothScroll("#ourTrip", 500);
+});
+
+//Animating 2 Link
+document.querySelector(".hotelLink").addEventListener("click", function (e) {
+  e.preventDefault();
+  smoothScroll("#hotel", 500);
+});
+// Animating 3 Link
+document.querySelector(".priceLink").addEventListener("click", function (e) {
+  e.preventDefault();
+  smoothScroll("#price", 500);
+});
