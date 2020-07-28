@@ -81,14 +81,14 @@ function scrollAppear() {
 window.addEventListener("scroll", scrollAppear);
 
 // -- popup
-let popupBtn = document.getElementById("popupBtn");
+let popupBtn = document.querySelector("#popupBtn");
 popupBtn.addEventListener("click", () => {
   popupToggle();
 });
 
 function popupToggle() {
-  let blur = document.getElementById("blur");
-  let popup = document.getElementById("popup");
+  let blur = document.querySelector("#blur");
+  let popup = document.querySelector("#popup");
   document.querySelector("body").style.overflowY = "hidden";
 
   blur.classList.add("active");
@@ -97,8 +97,8 @@ function popupToggle() {
 
 let closePopup = document.querySelector(".close");
 closePopup.addEventListener("click", () => {
-  let blur = document.getElementById("blur");
-  let popup = document.getElementById("popup");
+  let blur = document.querySelector("#blur");
+  let popup = document.querySelector("#popup");
 
   document.querySelector("body").style.overflowY = "auto";
 
